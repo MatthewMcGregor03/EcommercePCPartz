@@ -12,7 +12,7 @@ public class DeliveryFactory {
         List<String> dateFormats = Helper.getLocalDateFormats();
 if(Helper.isNullOrEmpty(transitDate) || Helper.isNullOrEmpty(deliveryDate))
     return null;
-        Date transitDateTime = Helper.isDateValid(transitDate, dateFormats);
+Date transitDateTime = Helper.isDateValid(transitDate, dateFormats);
         if (transitDateTime == null) {
             return null;
         }
